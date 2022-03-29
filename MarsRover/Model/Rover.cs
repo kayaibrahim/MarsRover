@@ -1,9 +1,4 @@
 ﻿using MarsRover.Types;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MarsRover.Model
 {
@@ -13,7 +8,7 @@ namespace MarsRover.Model
         public int CoordinateY { get; set; }
         public DirectionType Direction { get; set; }
         public Plateau Plateau { get; set; }
-        private List<(int, int, DirectionType)> CrashZones { get; set; }
+
         public Rover(int coordinateX, int coordinateY, DirectionType direction, Plateau plateau)
         {
             CoordinateX = coordinateX;
